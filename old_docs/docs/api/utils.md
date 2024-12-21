@@ -2277,8 +2277,10 @@ local VORPutils = {}
 TriggerEvent("getUtils", function(utils)
     VORPutils = utils
 end)
-
-local waypoint = VORPutils.Gps:SetGps(x, y, z, 'color hash')
-
-###Example
-local waypoint = VORPutils.Gps:SetGps(100.00, 100.00, 0, 'COLOR_YELLOW')
+```lua
+VORPutils.Gps:SetGps(X,Y,Z,"COLOR_HAS")
+```
+Example Usage:
+```lua
+local waypoint = VORPutils.Gps:SetGps(100.00,100.00,100.00,"COLOR_RED")
+```
