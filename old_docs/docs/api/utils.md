@@ -2271,12 +2271,16 @@ end)
 ```
 
 ### Waypoints
+You can create responsive waypoint to a destination
+```lua
 -- Client
 local VORPutils = {}
 
 TriggerEvent("getUtils", function(utils)
     VORPutils = utils
 end)
+```
+
 ```lua
 VORPutils.Gps:SetGps(X,Y,Z,"COLOR_HAS")
 ```
